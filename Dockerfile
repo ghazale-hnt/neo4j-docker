@@ -1,11 +1,11 @@
-FROM neo4j
+FROM neo4j:3.0
 MAINTAINER James G. Kim <jgkim@jayg.org>
 
 ENV NEO4J_PLUGINS_PATH /var/lib/neo4j/plugins/
 
-ENV NEO4J_APOC_FILE apoc-3.0.4.2.1-all.jar
-ENV NEO4J_APOC_SHA256 4e988f7022d8f6beb1ed4fc7aa16579ec223a9497f5a2a4c55e81e75688e81fb
-ENV NEO4J_APOC_URI https://github.com/jgkim/neo4j-apoc-procedures/releases/download/3.0.4.2.1/apoc-3.0.4.2.1-all.jar
+ENV NEO4J_APOC_FILE apoc-3.0.8.4-all.jar
+ENV NEO4J_APOC_SHA256 ea9538e6532a43443e4351b3eb4838642d2fe8f1d1b36de9e4900dabdb7e81d7
+ENV NEO4J_APOC_URI https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/download/3.0.8.4/apoc-3.0.8.4-all.jar
 
 ENV NEO4J_SPATIAL_FILE neo4j-spatial-0.23-neo4j-3.0.4-server-plugin.jar
 ENV NEO4J_SPATIAL_SHA256 2c991a4e8181984d0e617526075171bd1b48cb61164750a228c63da3b0567437
